@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", serif;
+}
+
+body {
+    font-family: "Outfit", serif;
+    background-color: #f7f7f7;
+    color: #333;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10%;
+    text-decoration-color: #222;
+}
+
+.nav-links a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #666;
+}
+
+.auth-buttons a {
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.login {
+    color: #666;
+}
+
+.register {
+    background-color: #ff4b6e;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+}
+
+
+main {
+    max-width: 1200px;
+    margin: 4rem auto;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.tag {
+    display: inline-flex; 
+    align-items: center; 
+    background-color: #ffe8ec;
+    color: #ff4b6e;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    gap: 0.5rem; 
+}
+
+.tag img {
+    width: 20px; 
+    height: 20px; 
+}
+
+.tag p {
+    margin: 0; 
+}
+.tagline {
+    font-size: 14px;
+    color: #fb5f66;
+    background-color: #fff2f3;
+    padding: 6px 10px;
+    display: inline-block;
+    border-radius: 34px;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    max-width: 270px;
+    margin-bottom: 20px;
+
+}
+.tagline p{
+    margin-left: 5px; 
+}
+
+
+.tag-small {
+    display: inline-block;
+    background-color: #ffe8ec;
+    color: #ff4b6e;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: #222;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.cta {
+    background-color: #ff4b6e;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta:hover {
+    background-color: #ff3459;
+}
+
+.features-section {
+    margin-top: 8rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #222;
+}
+
+.features {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lines {
+    margin-top: -30px;
+    margin-left: 350px;
+}
+
+.lines img {
+    width: 250px;
+}
+
+.features h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.features .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.feature-part {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.features .feature-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid #ece9ea;
+    box-shadow: rgba(245, 220, 220, 0.35) 0px -50px 36px -28px inset
+}
+
+.features .special {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 330px;
+    text-align: center;
+    border: 1px solid #ece9ea;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(245, 220, 220, 0.35) 0px -50px 36px -28px inset
+}
+
+
+.features .feature-item img {
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.features .feature-item p {
+    font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .subtitle br {
+        display: none;
+    }
+
+    main {
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    .features-section {
+        margin-top: 4rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .lines {
+        margin: 20px auto;
+        margin-top: -10px;
+    }
+
+    .lines img {
+        max-width: 200px;
+        width: auto;
+    }
+
+    .sideimg {
+        display: none; 
+    }
+
+}
